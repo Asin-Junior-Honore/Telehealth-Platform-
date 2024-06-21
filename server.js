@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
+const path = require("path");
 const Nurse = require("./models/Nurse");
 const Doctor = require("./models/Doctor");
 const User = require("./models/User");
@@ -15,10 +16,10 @@ const sessionSecret = process.env.SESSION_SECRET;
 // Middleware for parsing JSON
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const baseUrl = "http://localhost:3000";
 
-// Set EJS as the view engine
+// Set EJS as the view engine and specify views directory
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // Function to connect to MongoDB
 const connectToMongoDB = async () => {
@@ -167,6 +168,7 @@ const startServer = async () => {
 startServer();
 
 // Array of objects containing full endpoint URLs
+const baseUrl = `http://localhost:${port}`;
 const endpoints = [
   { name: "User Form", url: `${baseUrl}/user-register` },
   { name: "Submit User", url: `${baseUrl}/submit-user` },
