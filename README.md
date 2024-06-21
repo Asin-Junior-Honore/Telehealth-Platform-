@@ -52,7 +52,7 @@ Welcome to the Telehealth Platform! This project aims to provide a seamless onli
 4. **Run the server**:
 
     ```bash
-    npm start
+    npm devStart
     ```
 
     The server will start on `http://localhost:3000`.
