@@ -8,7 +8,7 @@ const User = require("./models/User");
 require("dotenv").config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const mongoURI = process.env.MONGO_URI;
 const sessionSecret = process.env.SESSION_SECRET;
 
