@@ -5,7 +5,7 @@ const MongoStore = require("connect-mongo");
 const Nurse = require("./models/Nurse");
 const Doctor = require("./models/Doctor");
 const User = require("./models/User");
-require('dotenv').config();
+require("dotenv").config();
 
 const app = express();
 const port = 3000;
@@ -69,8 +69,14 @@ const startServer = async () => {
   });
 
   app.post("/submit-doctor", async (req, res) => {
-    const { fullName, whatsappNumber, timeAvailable, specialization } = req.body;
-    const newDoctor = new Doctor({ fullName, whatsappNumber, timeAvailable, specialization });
+    const { fullName, whatsappNumber, timeAvailable, specialization } =
+      req.body;
+    const newDoctor = new Doctor({
+      fullName,
+      whatsappNumber,
+      timeAvailable,
+      specialization,
+    });
     try {
       await newDoctor.save();
       res.send("Doctor data submitted");
@@ -90,8 +96,14 @@ const startServer = async () => {
   });
 
   app.post("/submit-nurse", async (req, res) => {
-    const { fullName, whatsappNumber, timeAvailable, specialization } = req.body;
-    const newNurse = new Nurse({ fullName, whatsappNumber, timeAvailable, specialization });
+    const { fullName, whatsappNumber, timeAvailable, specialization } =
+      req.body;
+    const newNurse = new Nurse({
+      fullName,
+      whatsappNumber,
+      timeAvailable,
+      specialization,
+    });
     try {
       await newNurse.save();
       res.send("Nurse data submitted");
