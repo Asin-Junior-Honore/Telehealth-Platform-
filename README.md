@@ -74,14 +74,6 @@ Welcome to the Telehealth Platform! This project aims to provide a seamless onli
 - **Fetch Nurses**: `GET /api/nurses`
 - **User Dashboard**: `GET /dashboard`
 
-## Screenshots 📸
-
-### User Registration
-![User Registration](./screenshots/user-register.png)
-
-### User Dashboard
-![User Dashboard](./screenshots/dashboard.png)
-
 ## Contributing 🤝
 
 Contributions are welcome! Please fork the repository and create a pull request.
