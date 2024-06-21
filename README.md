@@ -47,12 +47,13 @@ Welcome to the Telehealth Platform! This project aims to provide a seamless onli
     ```env
     MONGO_URI=your_mongo_uri
     SESSION_SECRET=your_session_secret
+    PORT=your port number || 3000
     ```
 
 4. **Run the server**:
 
     ```bash
-    npm start
+    npm devStart
     ```
 
     The server will start on `http://localhost:3000`.
