@@ -12,6 +12,7 @@
       "dest": "/server.js"
     }
   ],
+  
   "static": {
     "public": "views"
   }
