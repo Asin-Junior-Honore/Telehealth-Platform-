@@ -90,7 +90,7 @@ Contributions are welcome! Please fork the repository and create a pull request.
 For any inquiries or feedback, please contact us at:
 
 - Email: asinhonor823@gmail.com
-- Twitter: [@TelehealthPlat](https://twitter.com/TelehealthPlat)
+- Twitter: [@asintech](https://twitter.com/Asin_tech)
 
 ---
 
