@@ -100,9 +100,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For any inquiries or feedback, please contact us at:
 
-- Email: support@telehealthplatform.com
+- Email: asinhonor823@gmail.com
 - Twitter: [@TelehealthPlat](https://twitter.com/TelehealthPlat)
 
 ---
 
-Made with ❤️ by the Telehealth Platform Team
+Made with ❤️ by  Asin Honore ✌️, Happy Coding you all
