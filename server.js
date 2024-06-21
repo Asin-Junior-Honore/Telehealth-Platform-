@@ -58,7 +58,9 @@ const startServer = async () => {
 
   // Define your routes here
   app.get("/", (req, res) => {
-    res.send("Hello, World!");
+    res.send(
+      "Welcome to Femi's Telehealth Platform! This is your gateway to efficient and accessible healthcare services."
+    );
   });
 
   app.get("/doctors", (req, res) => {
