@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurse Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nurse Form</h1>
+    <form action="/submit-nurse" method="POST">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required /><br /><br />
+
+      <label for="whatsappNumber">WhatsApp Number:</label>
+      <input
+        type="text"
+        id="whatsappNumber"
+        name="whatsappNumber"
+        required
+      /><br /><br />
+
+      <label for="timeAvailable">Time Available:</label>
+      <select id="timeAvailable" name="timeAvailable" required>
+        <option value="morning">Morning</option>
+        <option value="noon">Noon</option>
+        <option value="evening">Evening</option>
+        <option value="anytime">Anytime</option></select
+      ><br /><br />
+
+      <label for="specialization">Specialization:</label>
+      <select id="specialization" name="specialization" required>
+        <option value="pediatric">Pediatric Nurse</option>
+        <option value="emergency">Emergency Nurse</option>
+        <option value="operating">Operating Room Nurse</option>
+        <option value="mental-health">Mental Health Nurse</option>
+        <!-- Add more options as needed --></select
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

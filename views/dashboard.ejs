@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background-color: #fff;
+        margin: 10px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .doctor-info {
+        margin-bottom: 10px;
+      }
+      .consult-button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .consult-button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome, <%= user.name %>!</h1>
+    <h2>List of Doctors</h2>
+    <ul>
+      <% doctors.forEach(function(doctor) { %>
+      <li>
+        <div class="doctor-info">
+          <strong>Name:</strong> <%= doctor.fullName %> <br />
+          <strong>WhatsApp Number:</strong> <%= doctor.whatsappNumber %> <br />
+          <strong>Time Available:</strong> <%= doctor.timeAvailable %> <br />
+          <strong>Specialization:</strong> <%= doctor.specialization %> <br />
+        </div>
+        <button class="consult-button">Consult</button>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
